@@ -5,6 +5,10 @@ from .interface import QiskitInterface
 
 class AutoQ:
     def __init__(self, system_params):
+        required_params = ["t_gate", "p_total", "parallel_factor"]
+        for param in required_params:
+            if param not in system_params:
+                raise ValueError(f"Missing required parameter: {param}")
         self.t_gate = system_params["t_gate"]
         self.p_total = system_params["p_total"]
         self.parallel_factor = system_params["parallel_factor"]
