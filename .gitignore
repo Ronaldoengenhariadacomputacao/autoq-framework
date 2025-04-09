@@ -8,4 +8,8 @@ venv/
 autoq_env/
 *.egg-info/
 dist/
+<<<<<<< HEAD
 build/
+=======
+build/
+>>>>>>> 405891aba7ee3802a9238c9251a8e62954074de9
